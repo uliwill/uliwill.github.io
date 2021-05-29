@@ -1,1 +1,441 @@
-Hello World
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Currículo Online - Ulisses Willian Reichenbach</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--========== BOX ICONS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="dist/css/style.css" />
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Ulisses</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home nav__icon"></i>Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>Profile</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">
+                <i class="bx bx-book nav__icon"></i>Education</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-receipt nav__icon"></i>Skills</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link"
+                ><i class="bx bx-briefcase-alt nav__icon"></i>Experience</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link"
+                ><i class="bx bx-award nav__icon"></i>Certificates</a
+              >
+            </li>
+            <li class="nav__item hidden">
+              <a href="#references" class="nav__link"
+                ><i class="bx bx-link-external nav__icon"></i>References</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main bd-container">
+      <!-- All elements within this div, is generated in PDF -->
+      <div class="resume" id="area-cv">
+        <div class="resume__left">
+          <!--========== HOME ==========-->
+          <section class="home" id="home">
+            <div class="home__container section bd-grid">
+              <div class="home__data bd-grid">
+                <img
+                  src="img/perfil.jpg"
+                  alt="Foto de perfil"
+                  class="home__img"
+                />
+
+                <h1 class="home__title">ULISSES WILLIAN <b>REICHENBACH</b></h1>
+                <h3 class="home__profession">Front End Developer</h3>
+
+                <!-- Button to download your CV saved in the pdf folder. Available for desktop. -->
+                <div>
+                  <a
+                    download=""
+                    href="dist/assets/pdf/ResumeCv.pdf"
+                    class="home__button-movil"
+                    >Download</a
+                  >
+                </div>
+              </div>
+
+              <div class="home__address bd-grid">
+                <span class="home__information">
+                  <i class="bx bx-map home__icon"></i> Porto Alegre - RS
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-envelope home__icon"></i> uliwill@gmail.com
+                </span>
+                <span class="home__information">
+                  <i class="bx bx-phone home__icon"></i> +55 (51) 99719-2478
+                </span>
+              </div>
+            </div>
+
+            <!-- Theme change button -->
+            <i
+              class="bx bx-moon change-theme"
+              title="Theme"
+              id="theme-button"
+            ></i>
+
+            <!-- Button to generate and download the pdf. Available for desktop. -->
+            <i
+              class="bx bx-download generate-pdf"
+              title="Generate PDF"
+              id="resume-button"
+            ></i>
+          </section>
+
+          <!--========== SOCIAL ==========-->
+          <section class="social section">
+            <h2 class="section-title">Social</h2>
+
+            <div class="social__container bd-grid">
+              <a
+                href="https://www.linkedin.com/in/uliwill/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-linkedin-square social__icon"></i> @uliwill
+              </a>
+              <a
+                href="https://github.com/uliwill"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-github social__icon"></i> @uliwill
+              </a>
+            </div>
+          </section>
+
+          <!--========== PROFILE ==========-->
+          <section class="profile section" id="profile">
+            <h2 class="section-title">Profile</h2>
+
+            <p class="profile__description">
+              Em busca de uma oportunidade como Desenvolvedor Front End para
+              aprimorar minha stack. Portfólio disponível no Github, atualização
+              frequente.
+            </p>
+          </section>
+
+          <!--========== EDUCATION ==========-->
+          <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education__container bd-grid">
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">
+                    Análise e Desenvolvimento de Sistemas
+                  </h3>
+                  <span class="education__studies">Uniasselvi</span>
+                  <span class="education__year">2018 - 2021</span>
+                </div>
+              </div>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <span class="education__line"></span>
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">Técnico em Administração</h3>
+                  <span class="education__studies"
+                    >Faculdade e Escola Técnica Alcides Maya</span
+                  >
+                  <span class="education__year">2012 - 2013</span>
+                </div>
+              </div>
+
+              <div class="education__content">
+                <div class="education__time">
+                  <span class="education__rounder"></span>
+                  <!-- <span class="education__line"></span> -->
+                </div>
+
+                <div class="education__data bd-grid">
+                  <h3 class="education__title">Técnico em Informática</h3>
+                  <span class="education__studies"
+                    >Faculdade e Escola Técnica Alcides Maya</span
+                  >
+                  <span class="education__year">2007 - 2008</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--========== SKILLS  ==========-->
+          <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__content bd-grid">
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span> HTML
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> SCSS
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> JavaScript
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Gulp
+                </li>
+              </ul>
+
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span> ReactJS
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> React Native
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> MySQL
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> PostgreSQL
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="resume__right">
+          <!--========== EXPERIENCE ==========-->
+          <section class="experience section" id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Desenvolvedor Front End</h3>
+                  <span class="experience__company">
+                    08/2020 até o momento | Quantic Code
+                  </span>
+                  <p class="experience__description">
+                    Personalização de lojas na plataforma Linx Commerce,
+                    utilizando HTML, CSS e Liquid.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Assistente Financeiro</h3>
+                  <span class="experience__company">
+                    05/2017 até 07/2019 | Cachorro do Rosário - Wallig
+                  </span>
+                  <p class="experience__description">
+                    Conferência de caixa, relatório de vendas, controle de
+                    cartão ponto, rotinas de contas a pagar, recebimento de
+                    mercadorias.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <!-- <span class="experience__line"></span> -->
+                </div>
+
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">Desenvolvedor Front End</h3>
+                  <span class="experience__company">
+                    12/2015 até 07/2017 | CC Digital
+                  </span>
+                  <p class="experience__description">
+                    Parceria em startup, desenvolvendo aplicativos para
+                    automação comercial de eventos. Aplicativos híbridos
+                    Android, utilizando HTML, CSS e Javascript.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--========== CERTIFICATES ==========-->
+          <section class="certificate section" id="certificates">
+            <h2 class="section-title">Certificates</h2>
+
+            <div class="certificate__container bd-grid">
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  Projetos Ágeis com SCRUM | Digital Innovation One | 03/2020
+                </h3>
+                <p class="certificate__description">
+                  Principais conceitos da agilidade e como trabalhar em uma
+                  equipe ágil.
+                </p>
+              </div>
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  ReactJS do Zero ao Avançado | Udemy | 11/2019
+                </h3>
+                <p class="certificate__description">
+                  Componentes de classe e componentes funcionais, rotas, Hooks,
+                  requisições HTTP, Redux, Context API.
+                </p>
+              </div>
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  QSPO - Qualified Standard Product Owner | Quantic Code |
+                  05/2019
+                </h3>
+                <p class="certificate__description">
+                  O que é um PO, responsabilidades, backlog de produto,
+                  planejamento de release, cerimônias.
+                </p>
+              </div>
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  Desenvolvedor Web | Udemy | 03/2018
+                </h3>
+                <p class="certificate__description">
+                  HTML, CSS, Javascript, Bootstrap, jQuery, Typescript, PHP,
+                  MySQL, Ajax, SEO.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!--========== REFERENCES ==========-->
+          <section class="references section hidden" id="references">
+            <h2 class="section-title">References</h2>
+
+            <div class="references__container bd-grid">
+              <div class="references__content bd-grid">
+                <span class="references__subtitle">Sr. Director</span>
+                <h3 class="references__title">Mr. Clay Doe</h3>
+                <ul class="references__contact">
+                  <li>Phone: 999-777-666</li>
+                  <li>E-mail: user@email.com</li>
+                </ul>
+              </div>
+
+              <div class="references__content bd-grid">
+                <span class="references__subtitle">Sr. Director</span>
+                <h3 class="references__title">Mr. Clay Doe</h3>
+                <ul class="references__contact">
+                  <li>Phone: 999-777-666</li>
+                  <li>E-mail: user@email.com</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!--========== LANGUAGES ==========-->
+          <section class="languages section hidden">
+            <h2 class="section-title">Languages</h2>
+
+            <div class="languages__container">
+              <ul class="languages__content bd-grid">
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Português
+                </li>
+                <li class="languages__name">
+                  <span class="languages__circle"></span> Inglês
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!--========== INTERESTS ==========-->
+          <section class="interests section">
+            <h2 class="section-title">Interests</h2>
+
+            <div class="interests__container bd-grid">
+              <div class="interests__content">
+                <i class="bx bx-headphone interests__icon"></i>
+                <span class="interests__name">Música</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bx-movie-play interests__icon"></i>
+                <span class="interests__name">Filmes e Séries</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bxs-joystick interests__icon"></i>
+                <span class="interests__name">Games</span>
+              </div>
+              <div class="interests__content">
+                <i class="bx bxs-plane-alt interests__icon"></i>
+                <span class="interests__name">Viajar</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="dist/assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
